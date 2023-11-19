@@ -1,0 +1,27 @@
+class jogo{
+    constructor(nome, idade, tipo){
+        this.nome = nome
+        this.idade = idade
+        this.tipo = tipo
+
+        if (tipo == "mago"){
+            this.ataque = "magia"
+        }else if (tipo == "guerreiro"){
+            this.ataque = "espada"
+        }else if (tipo == "monge"){
+            this.ataque = "artes marciais"
+        }else if (tipo == "ninja"){
+            this.ataque = "shuriken"
+        }
+
+    }
+
+
+    escrever(){console.log(`O ${this.tipo} atacou usando ${this.ataque}`)
+    }
+}
+
+let heroi = new jogo("Thor", 13, "monge")
+
+
+heroi.escrever()
